@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">YourBusiness</a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Welcome to Our Business</h1>
+            <p>We provide the best solutions for your business needs</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <!-- Your product cards should have class "product-card fade-in" -->
+                <div class="product-card fade-in">
+                    <h3>Advanced Analytics</h3>
+                    <p>Get deep insights into your business performance with our cutting-edge analytics platform.</p>
+                    <a href="#contact" class="learn-more">Learn More</a>
+                </div>
+                <div class="product-card fade-in">
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable and secure cloud infrastructure designed to grow with your business needs.</p>
+                    <a href="#contact" class="learn-more">Learn More</a>
+                </div>
+                <div class="product-card fade-in">
+                    <h3>Marketing Tools</h3>
+                    <p>Comprehensive marketing suite to reach your target audience and boost conversions.</p>
+                    <a href="#contact" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>CEO &amp; Founder</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Marketing Director</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member fade-in">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Mike Johnson">
+                    <h3>Mike Johnson</h3>
+                    <p>Lead Developer</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card fade-in">
+                    <p>"Working with YourBusiness has been a game-changer for our company. Their solutions increased our efficiency by 40%."</p>
+                    <span class="testimonial-author">- Sarah Johnson, ABC Corp</span>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>"The team at YourBusiness understood our needs perfectly and delivered exactly what we were looking for."</p>
+                    <span class="testimonial-author">- Mark Williams, XYZ Inc</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div id="form-status" class="form-status"></div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2023 Your Business. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Intersection Observer polyfill for older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="script.js"></script>
+</body>
+</html>
